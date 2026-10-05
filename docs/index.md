@@ -24,16 +24,40 @@
     <em>Browse Edit tools ↗</em>
   </a>
   <a class="tool-card" href="tools/selection/selection-tools/">
-    <span class="tool-card-index">03 / WORKFLOW</span>
-    <strong>Selection &amp; Render</strong>
-    <span>Find the right geometry, then prepare cameras, lights, and looks.</span>
-    <em>Browse workflow tools ↗</em>
+    <span class="tool-card-index">03 / SELECTION</span>
+    <strong>Selection</strong>
+    <span>Tools for selecting geometry and working with patterns.</span>
+    <em>Browse Selection tools ↗</em>
+  </a>
+  <a class="tool-card" href="tools/render/render-presets/">
+    <span class="tool-card-index">04 / RENDER</span>
+    <strong>Render</strong>
+    <span>Presets for render settings, cameras, lighting, and shaders.</span>
+    <em>Browse Render tools ↗</em>
   </a>
   <a class="tool-card" href="tools/management/outliner/">
-    <span class="tool-card-index">04 / SCENE TOOLS</span>
-    <strong>Management &amp; Utilities</strong>
-    <span>Keep scenes organized and everyday tasks close at hand.</span>
-    <em>Browse scene tools ↗</em>
+    <span class="tool-card-index">05 / SCENE TOOLS</span>
+    <strong>Management</strong>
+    <span>Tools for organizing, checking, and cleaning up scenes.</span>
+    <em>Browse Management tools ↗</em>
+  </a>
+  <a class="tool-card" href="tools/utilities/smart-cursor/">
+    <span class="tool-card-index">06 / UTILITIES</span>
+    <strong>Utilities</strong>
+    <span>Helpful workflow tools, including Smart Cursor and Pivot.</span>
+    <em>Browse Utilities ↗</em>
+  </a>
+  <a class="tool-card" href="tools/companion/pocket-pal/">
+    <span class="tool-card-index">07 / COMPANION</span>
+    <strong>Companion</strong>
+    <span>Companion tools such as Pocket Pal.</span>
+    <em>Browse Companion ↗</em>
+  </a>
+  <a class="tool-card" href="tools/prototype/fill-quad/">
+    <span class="tool-card-index">08 / IN DEVELOPMENT</span>
+    <strong>Prototype</strong>
+    <span>Experimental tools that are still taking shape.</span>
+    <em>Browse Prototype ↗</em>
   </a>
 </div>
 
