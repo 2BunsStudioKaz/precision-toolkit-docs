@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="2 Buns Studio mark">
+  <rect x="1" y="1" width="46" height="46" rx="12" fill="#343638" stroke="#e59a70" stroke-width="2"/>
+  <g fill="#f2eee5">
+    <ellipse cx="18" cy="25" rx="8" ry="12" transform="rotate(-14 18 25)"/>
+    <ellipse cx="30" cy="23" rx="8" ry="12" transform="rotate(14 30 23)"/>
+  </g>
+  <g fill="none" stroke="#d98962" stroke-linecap="round" stroke-width="1.6">
+    <path d="M15 19l1.4 1.4M20 16.5l1.3 1.4M27 16.5l1.3 1.4M32 19l1.4 1.4"/>
+  </g>
+</svg>

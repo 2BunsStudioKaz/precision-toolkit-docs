@@ -1,51 +1,46 @@
-# Precision Toolkit
-
-**A package of practical tools for Blender, by 2 Buns Studio.**
-
-Precision Toolkit brings together tools that make Blender workflows easier. Use the navigation to browse the package by category, or start with [Instancer](instancer.md), our first tool guide.
+<section class="studio-hero">
+  <p class="studio-kicker">2 BUNS STUDIO · BLENDER TOOLS</p>
+  <h1>Precision Toolkit</h1>
+  <p class="studio-lede">A growing collection of practical tools for Blender, with guides built to help you get straight to work.</p>
+  <p class="studio-actions"><a class="studio-button" href="instancer/">Explore Instancer <span aria-hidden="true">↗</span></a><a class="studio-text-link" href="installation/">Installation guide</a></p>
+</section>
 
 !!! info "Documentation in progress"
-    The categories and tool names below are based on the current Precision Toolkit list. Detailed descriptions, supported Blender versions, feature lists, and menu locations will be added as they are confirmed.
+    We’re building the guides as the tools take shape. The pages here will grow with confirmed features, setup steps, and examples.
 
-## Tools in Precision Toolkit
+## Explore the toolkit
 
-### Instancer
+<div class="tool-cards">
+  <a class="tool-card tool-card-featured" href="instancer/">
+    <span class="tool-card-index">01 / FIRST TOOL</span>
+    <strong>Instancer</strong>
+    <span>Make Blender collection instances easier to set up and use.</span>
+    <em>Open the guide ↗</em>
+  </a>
+  <a class="tool-card" href="tools/edit/edge-fair/">
+    <span class="tool-card-index">02 / MODELING</span>
+    <strong>Edit</strong>
+    <span>Modeling and mesh tools for hands-on work in Edit Mode.</span>
+    <em>Browse Edit tools ↗</em>
+  </a>
+  <a class="tool-card" href="tools/selection/selection-tools/">
+    <span class="tool-card-index">03 / WORKFLOW</span>
+    <strong>Selection &amp; Render</strong>
+    <span>Find the right geometry, then prepare cameras, lights, and looks.</span>
+    <em>Browse workflow tools ↗</em>
+  </a>
+  <a class="tool-card" href="tools/management/outliner/">
+    <span class="tool-card-index">04 / SCENE TOOLS</span>
+    <strong>Management &amp; Utilities</strong>
+    <span>Keep scenes organized and everyday tasks close at hand.</span>
+    <em>Browse scene tools ↗</em>
+  </a>
+</div>
 
-Makes setting up and using collection instances in Blender easier. Start with the [Instancer overview](instancer.md), [installation](installation.md), or [quick start](quick-start.md).
+## Start with Instancer
 
-### Edit
+Read the [Instancer overview](instancer.md), follow the [installation guide](installation.md), or jump into the [quick start](quick-start.md).
 
-[Edge Fair](tools/edit/edge-fair.md) · [Surface Fair](tools/edit/surface-fair.md) · [Smart Relax](tools/edit/smart-relax.md) · [ReCurve](tools/edit/recurve.md) · [Align Tools](tools/edit/align-tools.md) · [Circle Tools](tools/edit/circle-tools.md) · [Retube](tools/edit/retube.md) · [Mesh](tools/edit/mesh.md) · [Random](tools/edit/random.md) · [Auto-Merger](tools/edit/auto-merger.md) · [Edit Extras](tools/edit/edit-extras.md) · [Inset](tools/edit/inset.md)
+## About 2 Buns Studio
 
-### Selection
-
-[Selection Tools](tools/selection/selection-tools.md) · [Pattern Select](tools/selection/pattern-select.md) · [Select Extras](tools/selection/select-extras.md)
-
-### Render
-
-[Render Presets](tools/render/render-presets.md) · [Camera Presets](tools/render/camera-presets.md) · [Light Presets](tools/render/light-presets.md) · [Shader Presets](tools/render/shader-presets.md)
-
-### Management
-
-[Outliner](tools/management/outliner.md) · [Renamer](tools/management/renamer.md) · [Mesh Check](tools/management/mesh-check.md) · [Cleanup](tools/management/cleanup.md)
-
-### Utilities
-
-[Smart Cursor](tools/utilities/smart-cursor.md) · [Pivot](tools/utilities/pivot.md)
-
-### Companion
-
-[Pocket Pal](tools/companion/pocket-pal.md)
-
-### Prototype
-
-[Fill Quad](tools/prototype/fill-quad.md) · [ReCloth](tools/prototype/recloth.md)
-
-## Product links
-
-- **Product page:** [Add the Superhive or Blender Market link]
-- **Support:** [Add your preferred support contact]
-
-## About the package
-
-More tools and guides can be added to these categories as Precision Toolkit grows.
+Precision Toolkit is a package of Blender tools from 2 Buns Studio. New tools and documentation will be added as the package grows.
