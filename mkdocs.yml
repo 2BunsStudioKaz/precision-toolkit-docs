@@ -1,0 +1,67 @@
+site_name: 2 Buns Studio
+site_description: Guides and reference for Precision Toolkit by 2 Buns Studio.
+site_url: https://docs.2bunsstudio.com/
+site_author: 2 Buns Studio
+
+theme:
+  name: readthedocs
+  navigation_depth: 4
+  titles_only: true
+
+nav:
+  - Precision Toolkit:
+      - Overview: index.md
+      - Instancer:
+          - Overview: instancer.md
+          - Installation: installation.md
+          - Quick Start: quick-start.md
+          - Features: features.md
+      - Edit:
+          - Edge Fair: tools/edit/edge-fair.md
+          - Surface Fair: tools/edit/surface-fair.md
+          - Smart Relax: tools/edit/smart-relax.md
+          - ReCurve: tools/edit/recurve.md
+          - Align Tools: tools/edit/align-tools.md
+          - Circle Tools: tools/edit/circle-tools.md
+          - Retube: tools/edit/retube.md
+          - Mesh: tools/edit/mesh.md
+          - Random: tools/edit/random.md
+          - Auto-Merger: tools/edit/auto-merger.md
+          - Edit Extras: tools/edit/edit-extras.md
+          - Inset: tools/edit/inset.md
+      - Selection:
+          - Selection Tools: tools/selection/selection-tools.md
+          - Pattern Select: tools/selection/pattern-select.md
+          - Select Extras: tools/selection/select-extras.md
+      - Render:
+          - Render Presets: tools/render/render-presets.md
+          - Camera Presets: tools/render/camera-presets.md
+          - Light Presets: tools/render/light-presets.md
+          - Shader Presets: tools/render/shader-presets.md
+      - Management:
+          - Outliner: tools/management/outliner.md
+          - Renamer: tools/management/renamer.md
+          - Mesh Check: tools/management/mesh-check.md
+          - Cleanup: tools/management/cleanup.md
+      - Utilities:
+          - Smart Cursor: tools/utilities/smart-cursor.md
+          - Pivot: tools/utilities/pivot.md
+      - Companion:
+          - Pocket Pal: tools/companion/pocket-pal.md
+      - Prototype:
+          - Fill Quad: tools/prototype/fill-quad.md
+          - ReCloth: tools/prototype/recloth.md
+
+  - Help:
+      - Troubleshooting: troubleshooting.md
+      - Changelog: changelog.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+
+

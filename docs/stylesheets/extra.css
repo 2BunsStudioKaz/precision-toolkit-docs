@@ -1,0 +1,161 @@
+:root {
+  --studio-ink: #f0eee8;
+  --studio-muted: #b4b7b3;
+  --studio-accent: #e39a73;
+  --studio-paper: #171a1c;
+}
+
+body {
+  color: var(--studio-ink);
+  background: var(--studio-paper);
+}
+
+/* Give the stock Read the Docs theme a warmer, restrained studio palette. */
+.wy-nav-side {
+  background: #202320;
+}
+
+.wy-side-nav-search {
+  background: #292d29;
+}
+
+.wy-side-nav-search input[type="text"] {
+  border-color: #454b45;
+}
+
+/* The theme toggles li.current when a category is expanded. */
+.wy-nav-side .wy-menu-vertical ul,
+.wy-nav-side .wy-menu-vertical li ul {
+  background: transparent;
+}
+
+.wy-nav-side .wy-menu-vertical li a {
+  color: #e0e0e0;
+  background-color: #202320 !important;
+  border-color: transparent;
+  transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.wy-nav-side .wy-menu-vertical li a:hover {
+  background-color: #343434 !important;
+  color: #fff;
+}
+
+/* An open branch has a brighter header and a warm edge. */
+.wy-nav-side .wy-menu-vertical li.current:has(> ul) > a {
+  background-color: #383838 !important;
+  color: #fff;
+  box-shadow: inset 3px 0 var(--studio-accent);
+}
+
+/* Only the tools inside the expanded branch get this lighter shade. */
+.wy-nav-side .wy-menu-vertical li.current > ul,
+.wy-nav-side .wy-menu-vertical li.current > ul > li > a {
+  background-color: #303030 !important;
+  color: #eeeeee;
+}
+
+.wy-nav-side .wy-menu-vertical li.current > ul > li > a:hover {
+  background-color: #3a3a3a !important;
+}
+
+/* Keep the selected page distinct from its neighbouring tools. */
+.wy-nav-side .wy-menu-vertical li.current > ul > li.current > a,
+.wy-nav-side .wy-menu-vertical a.current {
+  background-color: #424242 !important;
+  color: #fff;
+  box-shadow: inset 3px 0 var(--studio-accent);
+}
+
+a {
+  color: #f0a27b;
+}
+
+a:hover {
+  color: #ffd0ae;
+}
+
+.rst-content a {
+  color: #f0a27b;
+}
+
+.rst-content a:hover {
+  color: #ffd0ae;
+}
+
+.wy-nav-content {
+  background: transparent;
+  color: var(--studio-ink);
+}
+
+.wy-nav-content-wrap {
+  background-color: #171a1c;
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(18, 21, 23, 0.56) 0%,
+      rgba(18, 21, 23, 0.72) 52%,
+      rgba(18, 21, 23, 0.86) 100%
+    ),
+    url("../images/instancer-background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.rst-content {
+  color: var(--studio-ink);
+}
+
+.rst-content h1,
+.rst-content h2,
+.rst-content h3 {
+  color: var(--studio-ink);
+  letter-spacing: -0.02em;
+}
+
+.rst-content code,
+.rst-content tt {
+  color: #f3c9ad;
+  background: rgba(10, 12, 13, 0.55);
+  border: 1px solid rgba(240, 238, 232, 0.13);
+}
+
+.rst-content pre,
+.rst-content .highlight pre {
+  color: var(--studio-ink);
+  background: rgba(10, 12, 13, 0.72);
+  border: 1px solid rgba(240, 238, 232, 0.16);
+}
+
+.rst-content .admonition,
+.rst-content .wy-alert {
+  color: #263238;
+  background-color: rgba(231, 242, 250, 0.97);
+  border-radius: 3px;
+}
+
+.rst-content .admonition p,
+.rst-content .admonition li,
+.rst-content .wy-alert p,
+.rst-content .wy-alert li {
+  color: #263238;
+}
+
+.rst-content .admonition-title,
+.rst-content .wy-alert-title {
+  color: #fff;
+}
+
+.rst-content .admonition a,
+.rst-content .wy-alert a {
+  color: #8b4c2f;
+}
+
+.rst-content .admonition a:hover,
+.rst-content .wy-alert a:hover {
+  color: #5e331f;
+}
+
+
