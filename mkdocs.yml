@@ -7,6 +7,7 @@ theme:
   name: readthedocs
   navigation_depth: 4
   titles_only: true
+  prev_next_buttons_location: none
 
 nav:
   - Precision Toolkit:
