@@ -68,6 +68,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/background-cycle.js
+  - javascripts/tool-tabs.js
 
 markdown_extensions:
   - admonition
