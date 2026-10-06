@@ -557,7 +557,7 @@ a:hover {
 
 .rst-content .tool-tab-carousel {
   display: grid;
-  grid-template-columns: 1.85em minmax(0, 1fr) 1.85em;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 0.35em;
   width: 100%;
@@ -565,52 +565,14 @@ a:hover {
   margin-top: 0.85em;
 }
 
-.rst-content .tool-tab-arrow {
-  visibility: hidden;
-  display: inline-flex;
-  width: 1.85em;
-  height: 2.1em;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 1px solid rgba(229, 154, 112, 0.38);
-  border-radius: 3px;
-  color: #f1c1a2;
-  background: rgba(229, 154, 112, 0.06);
-  font: inherit;
-  font-size: 1em;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.rst-content .tool-tab-carousel.has-overflow .tool-tab-arrow {
-  visibility: visible;
-}
-
 .rst-content .tool-tab-carousel.is-expanded {
   grid-template-columns: minmax(0, 1fr);
-}
-
-.rst-content .tool-tab-carousel.is-expanded .tool-tab-arrow {
-  display: none;
 }
 
 .rst-content .tool-tab-carousel.is-expanded .tool-subtools {
   flex-wrap: wrap;
   overflow: visible;
   scroll-snap-type: none;
-}
-
-.rst-content .tool-tab-arrow:hover:not(:disabled),
-.rst-content .tool-tab-arrow:focus-visible {
-  border-color: rgba(229, 154, 112, 0.8);
-  color: #fff0e4;
-  background: rgba(229, 154, 112, 0.16);
-}
-
-.rst-content .tool-tab-arrow:disabled {
-  opacity: 0.38;
-  cursor: default;
 }
 
 .rst-content .tool-subtools {

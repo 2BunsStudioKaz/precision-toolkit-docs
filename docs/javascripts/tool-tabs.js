@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const carousels = document.querySelectorAll(".tool-tab-carousel");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   carousels.forEach((carousel) => {
     const tabs = carousel.querySelector(".tool-subtools");
-    const buttons = carousel.querySelectorAll(".tool-tab-arrow");
     const expandButton = carousel.closest(".tool-card")?.querySelector(".tool-tab-expand");
     const card = carousel.closest(".tool-card");
-    if (!tabs || buttons.length !== 2 || !expandButton || !card) return;
+    if (!tabs || !expandButton || !card) return;
     expandButton.dataset.expandLabel = expandButton.getAttribute("aria-label");
 
     const update = () => {
@@ -16,22 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const overflowing = expanded || maxScroll > 1;
       carousel.classList.toggle("has-overflow", overflowing);
       card.classList.toggle("has-tool-overflow", overflowing);
-      buttons[0].disabled = expanded || !overflowing || tabs.scrollLeft <= 1;
-      buttons[1].disabled = expanded || !overflowing || tabs.scrollLeft >= maxScroll - 1;
       expandButton.setAttribute("aria-label", expanded ? expandButton.dataset.collapseLabel : expandButton.dataset.expandLabel);
     };
-
-    buttons.forEach((button, index) => {
-      button.addEventListener("click", () => {
-        const firstTab = tabs.querySelector("a");
-        const tabWidth = firstTab ? firstTab.getBoundingClientRect().width : tabs.clientWidth * 0.8;
-        const gap = Number.parseFloat(getComputedStyle(tabs).columnGap) || 0;
-        tabs.scrollBy({
-          left: (index === 0 ? -1 : 1) * (tabWidth + gap),
-          behavior: reducedMotion.matches ? "auto" : "smooth",
-        });
-      });
-    });
 
     expandButton.addEventListener("click", () => {
       const expanded = carousel.classList.toggle("is-expanded");
