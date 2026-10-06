@@ -57,8 +57,17 @@ nav:
       - Troubleshooting: troubleshooting.md
       - Changelog: changelog.md
 
+  - Where to Buy:
+      - Precision Toolkit: where-to-buy.md
+
+  - Follow 2 Buns Studio:
+      - Social Media: social-media.md
+
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/background-cycle.js
 
 markdown_extensions:
   - admonition

@@ -11,6 +11,55 @@ body {
   color: var(--studio-ink);
   background: var(--studio-paper);
   font-family: "Segoe UI", "Aptos", system-ui, sans-serif;
+  isolation: isolate;
+}
+
+#studio-background-slideshow {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--studio-paper);
+}
+
+.studio-background-frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: studio-background-cycle 60s linear infinite;
+}
+
+.studio-background-frame::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    135deg,
+    rgba(20, 21, 23, 0.66) 0%,
+    rgba(23, 24, 26, 0.78) 52%,
+    rgba(20, 21, 23, 0.9) 100%
+  );
+}
+
+@keyframes studio-background-cycle {
+  0%, 13.5% { opacity: 1; }
+  16.5%, 96.5% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-background-frame {
+    animation: none;
+    opacity: 0;
+  }
+
+  .studio-background-static .studio-background-frame:first-child {
+    opacity: 1;
+  }
 }
 
 /* Give the stock Read the Docs theme a warmer, restrained studio palette. */
@@ -44,13 +93,19 @@ body {
 }
 
 .wy-side-nav-search > a.icon-home::before {
-  content: "";
-  display: inline-block;
-  width: 1.25em;
-  height: 1.25em;
-  flex: 0 0 1.25em;
-  vertical-align: middle;
-  background: url("../images/2buns-mark.svg") center / contain no-repeat;
+  content: "\f015";
+  display: inline-flex;
+  width: 1.65em;
+  height: 1.65em;
+  flex: 0 0 1.65em;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--studio-accent);
+  border-radius: 4px;
+  color: #f2eee5;
+  background-color: #343638;
+  font: normal normal normal 0.72em/1 FontAwesome;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* The theme toggles li.current when a category is expanded. */
@@ -119,19 +174,7 @@ a:hover {
 }
 
 .wy-nav-content-wrap {
-  background-color: #17191b;
-  background-image:
-    linear-gradient(
-      135deg,
-      rgba(20, 21, 23, 0.66) 0%,
-      rgba(23, 24, 26, 0.78) 52%,
-      rgba(20, 21, 23, 0.9) 100%
-    ),
-    url("../images/instancer-background.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: transparent;
 }
 
 /* Hide the fixed bottom-left bar that repeats the Previous and Next links. */
@@ -250,6 +293,37 @@ a:hover {
   transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
 }
 
+.rst-content .tool-card::before {
+  position: absolute;
+  z-index: 0;
+  top: -25%;
+  bottom: -25%;
+  left: -45%;
+  width: 38%;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(229, 154, 112, 0.04) 22%,
+    rgba(255, 231, 214, 0.2) 50%,
+    rgba(229, 154, 112, 0.05) 78%,
+    transparent 100%
+  );
+}
+
+.rst-content .tool-card:hover::before,
+.rst-content .tool-card:focus-visible::before {
+  animation: studio-card-sweep 850ms ease-out;
+}
+
+@keyframes studio-card-sweep {
+  0% { transform: translateX(-15%) skewX(-18deg); opacity: 0; }
+  18% { opacity: 0.9; }
+  100% { transform: translateX(430%) skewX(-18deg); opacity: 0; }
+}
+
 .rst-content .tool-card::after {
   position: absolute;
   top: -0.35em;
@@ -259,6 +333,7 @@ a:hover {
   content: "";
   pointer-events: none;
   opacity: 0.7;
+  transition: opacity 220ms ease, filter 220ms ease;
   background:
     radial-gradient(circle, transparent 31%, rgba(229, 154, 112, 0.32) 32% 33%, transparent 34% 53%, rgba(229, 154, 112, 0.2) 54% 55%, transparent 56%),
     radial-gradient(circle at center, rgba(229, 154, 112, 0.09), transparent 70%);
@@ -313,6 +388,90 @@ a:hover {
   box-shadow: 0 0 0 0.7em rgba(229, 154, 112, 0.04), inset 0 0 0 0.7em rgba(229, 154, 112, 0.04);
 }
 
+.rst-content .tool-card:nth-child(1):hover::after,
+.rst-content .tool-card:nth-child(1):focus-visible::after {
+  animation: studio-art-orbit 950ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.rst-content .tool-card:nth-child(2):hover::after,
+.rst-content .tool-card:nth-child(2):focus-visible::after {
+  animation: studio-art-grid 700ms ease-out both;
+}
+
+.rst-content .tool-card:nth-child(3):hover::after,
+.rst-content .tool-card:nth-child(3):focus-visible::after {
+  animation: studio-art-reticle 720ms ease-out both;
+}
+
+.rst-content .tool-card:nth-child(4):hover::after,
+.rst-content .tool-card:nth-child(4):focus-visible::after {
+  animation: studio-art-lens 850ms ease-out both;
+}
+
+.rst-content .tool-card:nth-child(5):hover::after,
+.rst-content .tool-card:nth-child(5):focus-visible::after {
+  animation: studio-art-dots 700ms ease-out both;
+}
+
+.rst-content .tool-card:nth-child(6):hover::after,
+.rst-content .tool-card:nth-child(6):focus-visible::after {
+  animation: studio-art-target 760ms ease-out both;
+}
+
+.rst-content .tool-card:nth-child(7):hover::after,
+.rst-content .tool-card:nth-child(7):focus-visible::after {
+  animation: studio-art-companion 780ms ease-in-out both;
+}
+
+.rst-content .tool-card:nth-child(8):hover::after,
+.rst-content .tool-card:nth-child(8):focus-visible::after {
+  animation: studio-art-prototype 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes studio-art-orbit {
+  from { transform: rotate(0deg) scale(0.94); }
+  to { transform: rotate(360deg) scale(1.06); }
+}
+
+@keyframes studio-art-grid {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 15px 15px, 15px 15px; }
+}
+
+@keyframes studio-art-reticle {
+  0% { transform: scale(0.78); }
+  62% { transform: scale(1.13); }
+  100% { transform: scale(1); }
+}
+
+@keyframes studio-art-lens {
+  from { transform: rotate(0deg) scale(0.94); }
+  to { transform: rotate(38deg) scale(1.08); }
+}
+
+@keyframes studio-art-dots {
+  from { background-position: 0 0; transform: translateY(5px) scale(0.9); }
+  to { background-position: 0 16px; transform: translateY(0) scale(1); }
+}
+
+@keyframes studio-art-target {
+  0% { transform: scale(0.82); }
+  58% { transform: scale(1.14); }
+  100% { transform: scale(1); }
+}
+
+@keyframes studio-art-companion {
+  0%, 100% { transform: translateY(0); }
+  35% { transform: translateY(-5px) rotate(3deg); }
+  70% { transform: translateY(1px) rotate(-2deg); }
+}
+
+@keyframes studio-art-prototype {
+  0% { transform: rotate(45deg) scale(0.94); }
+  55% { transform: rotate(138deg) scale(1.08); }
+  100% { transform: rotate(45deg) scale(1); }
+}
+
 .rst-content .tool-card > * {
   position: relative;
   z-index: 1;
@@ -323,6 +482,12 @@ a:hover {
   border-color: rgba(229, 154, 112, 0.72);
   color: var(--studio-ink);
   background: rgba(47, 49, 51, 0.98);
+}
+
+.rst-content .tool-card:hover::after,
+.rst-content .tool-card:focus-visible::after {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px rgba(229, 154, 112, 0.28));
 }
 
 .rst-content .tool-card strong {
@@ -393,6 +558,23 @@ a:hover {
 @media (max-width: 600px) {
   .rst-content .tool-cards {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rst-content .tool-card,
+  .rst-content .tool-card::after {
+    transition: none;
+  }
+
+  .rst-content .tool-card:hover::before,
+  .rst-content .tool-card:focus-visible::before {
+    animation: none;
+  }
+
+  .rst-content .tool-card:hover::after,
+  .rst-content .tool-card:focus-visible::after {
+    animation: none;
   }
 }
 

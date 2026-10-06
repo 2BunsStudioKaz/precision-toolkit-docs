@@ -61,10 +61,6 @@
   </a>
 </div>
 
-## Start with Instancer
-
-Read the [Instancer overview](instancer.md), follow the [installation guide](installation.md), or jump into the [quick start](quick-start.md).
-
 ## About 2 Buns Studio
 
 Precision Toolkit is a package of Blender tools from 2 Buns Studio. New tools and documentation will be added as the package grows.
