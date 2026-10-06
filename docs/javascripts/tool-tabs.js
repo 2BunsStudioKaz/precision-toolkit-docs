@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const maxScroll = Math.max(0, tabs.scrollWidth - tabs.clientWidth);
       const expanded = carousel.classList.contains("is-expanded");
       const overflowing = expanded || maxScroll > 1;
-      carousel.classList.toggle("has-overflow", overflowing);
+            const scrollable = !expanded && maxScroll > 1;
+      carousel.classList.toggle("can-scroll-left", scrollable && tabs.scrollLeft > 1);
+      carousel.classList.toggle("can-scroll-right", scrollable && tabs.scrollLeft < maxScroll - 1);
+        carousel.classList.toggle("has-overflow", overflowing);
       card.classList.toggle("has-tool-overflow", overflowing);
       expandButton.setAttribute("aria-label", expanded ? expandButton.dataset.collapseLabel : expandButton.dataset.expandLabel);
     };
