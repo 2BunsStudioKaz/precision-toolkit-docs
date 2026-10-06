@@ -1,8 +1,16 @@
 # Surface Fair
 
-**Surface Fair** is listed in the **Edit** section of Precision Toolkit by 2 Buns Studio.
+Surface Fair reconstructs a selected surface patch from the surrounding curvature.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Surface Fair are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Workflow
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+1. Save a comparison copy of the mesh.
+2. In Mesh Edit Mode, select a surface island whose surrounding geometry provides a usable surface.
+3. Run Surface Fair and adjust **Influence**, **Bulge**, **Preserve Flow**, and **Iterations**.
+4. Compare the result with the original and undo if needed.
+
+Bulge offsets the repaired patch along or against its face normals. The offset fades toward the fixed boundary. Preserve Flow and Iterations control additional topology redistribution.
+
+Surface Fair can change clean but wavy surfaces. A usable surrounding region is required; unsupported or overlapping fits are cancelled. It does not guarantee preserved volume or freedom from self-intersections.
+
+**Compatibility:** Windows only, Blender 5.1 through 5.2.

@@ -12,19 +12,18 @@ theme:
 nav:
   - Precision Toolkit:
       - Overview: index.md
-      - Instancer:
-          - Overview: instancer.md
-          - Installation: installation.md
-          - Quick Start: quick-start.md
-          - Features: features.md
+      - Installation: installation.md
+      - Toolkit Host: toolkit-host.md
+      - Scene:
+          - ReCurve: tools/edit/recurve.md
+          - ReTube: tools/edit/retube.md
+          - Instancer: instancer.md
       - Edit:
           - Edge Fair: tools/edit/edge-fair.md
           - Surface Fair: tools/edit/surface-fair.md
           - Smart Relax: tools/edit/smart-relax.md
-          - ReCurve: tools/edit/recurve.md
           - Align Tools: tools/edit/align-tools.md
           - Circle Tools: tools/edit/circle-tools.md
-          - Retube: tools/edit/retube.md
           - Mesh: tools/edit/mesh.md
           - Random: tools/edit/random.md
           - Auto-Merger: tools/edit/auto-merger.md
@@ -56,6 +55,7 @@ nav:
   - Help:
       - Troubleshooting: troubleshooting.md
       - Changelog: changelog.md
+      - Third-party licenses: third-party-licenses.md
 
   - Where to Buy:
       - Precision Toolkit: where-to-buy.md
@@ -74,5 +74,9 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
+
+not_in_nav: |
+  quick-start.md
+  features.md
 
 

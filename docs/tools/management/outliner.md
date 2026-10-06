@@ -1,8 +1,15 @@
 # Outliner
 
-**Outliner** is listed in the **Management** section of Precision Toolkit by 2 Buns Studio.
+Outliner adds navigation, selection, organization, and reusable collection templates to Blender's Outliner.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Outliner are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Shortcuts
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+- **F** or **Numpad .** reveals and centers the active object.
+- **Shift+F** closes the nearest parent collection; repeat to move upward.
+- **Ctrl+Shift+F** closes the parent chain without closing Scene Collection.
+- **Alt-click** selects a collection's contents. Add or remove with **Alt+Shift-click** or **Alt+Ctrl-click**.
+- Press **G**, then click a collection to move selected objects into it.
+- **Ctrl+G** groups selected branches and objects; **Ctrl+Shift+G** ungroups selected collection containers.
+- **Alt+D** creates linked duplicates of selected objects or collection branches.
+
+The tool also provides controls to compact collection paths, apply color chains, and create reusable collection templates. Template presets are user data. Outliner supports Blender 4.3 through 5.2.

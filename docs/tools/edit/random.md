@@ -1,8 +1,13 @@
 # Random
 
-**Random** is listed in the **Edit** section of Precision Toolkit by 2 Buns Studio.
+Random adds precision controls for object transforms and a separate random transform for mesh islands.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Random are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Object Mode: Random Transform
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+Select objects and run **Random Transform**. Set the increments and random ranges in its controls, then confirm the operation. The add-on extends Blender's native randomize-transform command so existing shortcuts and scripts continue to work.
+
+## Mesh Edit Mode: Random Transform - Edit
+
+Select mesh islands and run **Random Transform - Edit**. Adjust the operation in the redo panel. The tool can apply topology-aware surface noise, including displacement along normals and boundary preservation.
+
+Random supports Blender 4.3 through 5.2. It can run as a standalone add-on or through the Host.

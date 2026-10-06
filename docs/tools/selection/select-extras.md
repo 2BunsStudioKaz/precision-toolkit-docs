@@ -1,8 +1,7 @@
 # Select Extras
 
-**Select Extras** is listed in the **Selection** section of Precision Toolkit by 2 Buns Studio.
+Select Extras provides selection pies in Object Mode and persistent connected-island selection in Mesh Edit Mode.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Select Extras are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+Enable the features you want in the Select Extras settings, then use their configured shortcuts or menu entries. The selection pies follow Blender's selected mouse button preference. In Mesh Edit Mode, use its connected-island selection feature to select mesh islands persistently.
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+Check the tool's **Shortcuts** preferences for the active key bindings; Select Extras does not replace Blender's native shortcuts. It supports Blender 4.3 through 5.2.

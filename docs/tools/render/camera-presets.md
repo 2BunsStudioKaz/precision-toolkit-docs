@@ -1,8 +1,18 @@
 # Camera Presets
 
-**Camera Presets** is listed in the **Render** section of Precision Toolkit by 2 Buns Studio.
+Camera Presets stores output format, focal length, and framing settings independently for each camera.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Camera Presets are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Save and restore a camera setup
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+1. Select the camera you want to configure.
+2. Set the output format, focal length, and framing values.
+3. Store the settings on that camera.
+4. Restore the saved values whenever you return to that camera.
+
+The optional cursor tracker aims the viewed camera when the 3D Cursor moves.
+
+## Organize cameras
+
+Create an empty group with **Plus**, then drag cameras into it when ready; creating a group does not move selected cameras automatically. Drag a camera or group to change its location. **Minus** ungroups a camera or dissolves the selected group. **Apply Layout** requires confirmation.
+
+Camera Presets supports Blender 4.3 through 5.2.

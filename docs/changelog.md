@@ -1,11 +1,7 @@
 # Changelog
 
-Record user-visible changes for each Instancer release, with the newest release first.
+Record user-visible changes for Precision Toolkit releases, with the newest release first.
 
 ## Unreleased
 
-- Initial documentation draft.
-
-## [Version number] — [Release date]
-
-- [Add a concise description of a new feature, improvement, or fix.]
+- Documentation expanded to cover the Host and tool packages in release 1.4.

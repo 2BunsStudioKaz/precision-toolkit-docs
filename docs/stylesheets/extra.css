@@ -686,6 +686,19 @@ a:hover {
   color: #ffd5b8;
 }
 
+/* Keep the theme credit present but visually subdued. */
+footer {
+  background: transparent;
+  font-size: 0.75rem;
+  opacity: 0.48;
+  transition: opacity 160ms ease;
+}
+
+footer:hover,
+footer:focus-within {
+  opacity: 0.78;
+}
+
 @media (max-width: 600px) {
   .rst-content .tool-cards {
     grid-template-columns: 1fr;

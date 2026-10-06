@@ -1,8 +1,20 @@
 # Cleanup
 
-**Cleanup** is listed in the **Management** section of Precision Toolkit by 2 Buns Studio.
+Cleanup helps reduce file clutter with review-first duplicate merging and removal of broken or unused data.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Cleanup are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Optimize a file
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+1. Choose the data categories to inspect.
+2. Run **Optimize File** from the panel, header, or F3.
+3. Review the proposed changes and detailed report.
+4. Confirm the enabled changes or cancel.
+
+Only checked categories are scanned. Cleanup compares actual data and relationships as well as names; items it cannot verify are kept separate. Confirmed changes support Blender Undo.
+
+## Prevent Duplicates
+
+The optional Prevent Duplicates feature compares newly pasted or appended data with the file state before that import. It does not continuously clean the whole project. Each completed batch has its own Undo step.
+
+Use the removal and orphan-purge review actions carefully. Purge can remove all unused local and linked data at confirmation, including data made unused after the scan.
+
+Cleanup supports Blender 4.3 through 5.2.

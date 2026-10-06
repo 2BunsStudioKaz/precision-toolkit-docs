@@ -1,8 +1,17 @@
 # Light Presets
 
-**Light Presets** is listed in the **Render** section of Precision Toolkit by 2 Buns Studio.
+Light Presets organizes scene lights, edits native light settings, and assigns IES profiles.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Light Presets are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Organize and edit lights
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+Use the light list to group and select lights, then edit their native settings from the Light Presets controls. Store and restore reusable settings with the available preset actions. Grouping keeps related lights together without replacing the underlying Blender light objects.
+
+## Pattern controls
+
+The tool includes procedural light patterns such as **Rays** and **Cluster**. These are artistic effects, not physical simulations of blinds, foliage, or optics. Adjust their shape, spread, softness, variation, and seed using the pattern controls.
+
+## IES profiles
+
+Import and assign IES profiles where supported. IES import requires Cycles and Blender 5.0 or later.
+
+Light Presets supports Blender 4.3 through 5.2. The IES import feature has the additional requirements above.

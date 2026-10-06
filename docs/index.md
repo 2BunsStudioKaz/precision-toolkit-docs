@@ -2,11 +2,7 @@
   <p class="studio-kicker">2 BUNS STUDIO · BLENDER TOOLS</p>
   <h1>Precision Toolkit</h1>
   <p class="studio-lede">A growing collection of practical tools for Blender, with guides built to help you get straight to work.</p>
-  <p class="studio-actions"><a class="studio-button" href="instancer/">Explore Instancer <span aria-hidden="true">↗</span></a><a class="studio-text-link" href="installation/">Installation guide</a></p>
 </section>
-
-!!! info "Documentation in progress"
-    We’re building the guides as the tools take shape. The pages here will grow with confirmed features, setup steps, and examples.
 
 ## Explore the toolkit
 

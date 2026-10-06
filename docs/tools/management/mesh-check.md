@@ -1,8 +1,14 @@
 # Mesh Check
 
-**Mesh Check** is listed in the **Management** section of Precision Toolkit by 2 Buns Studio.
+Mesh Check audits selected objects or an Outliner collection for topology, normals, overlaps, density, transforms, modifiers, and unsupported object types.
 
-!!! info "Documentation in progress"
-    This page is a placeholder while the details for Mesh Check are being prepared. Its purpose, supported Blender versions, setup steps, controls, and example workflows will be added once confirmed.
+## Run an audit
 
-Use the [Precision Toolkit overview](../../index.md) to browse the other tools in the package.
+1. Select the objects or collection to inspect.
+2. Choose the checks to run and click **Run Check**.
+3. Expand results to inspect an issue, select its affected geometry, or apply a supported fix.
+4. Rescan after replacing objects or mesh data.
+
+Repairs are undoable. Edits to shared mesh data affect every object using that data, including objects outside the current selection. Applying checked modifiers can reorder them ahead of unchecked modifiers, so review interdependent modifier stacks before using that action.
+
+Mesh Check supports Blender 4.3 through 5.2.

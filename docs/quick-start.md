@@ -1,24 +1,21 @@
-# Quick Start
+# Instancer Quick Start
 
-This guide will take a new user from a fresh Blender scene to their first collection instance with Instancer.
-
-!!! info "Example steps needed"
-    Add a tested, end-to-end workflow here once the add-on's interface and setup steps are settled.
+This short workflow uses a selection of scene objects to create a reusable collection instance.
 
 ## Before you begin
 
-- Blender version: **[To be confirmed]**
-- Example file or scene: **[Optional: link a sample .blend file]**
+Install the Precision Toolkit Host or Instancer on its own, and make sure Instancer is enabled. See [Installation](installation.md). Start in Object Mode with the objects you want to package selected.
 
-## Create your first instance
+## Create and edit
 
-1. [Describe how to prepare or choose the source collection.]
-2. [Describe how to use Instancer to set up the instance.]
-3. [Describe how to place or duplicate the resulting instance.]
-4. [Show how to confirm the instance still references the intended collection.]
+1. Run **Create Instance** from the Instancer panel or the Host's Object Mode **Shift+W** menu.
+2. Review the proposed collection name and confirm the operation.
+3. Select the new instance and press **Tab** to enter its nested editing session.
+4. Move or edit the contents, then choose **Exit** to apply the edit and return to the parent level.
+5. Duplicate the instance to reuse the same source contents elsewhere.
 
-> Screenshot or short demonstration will go here once the final workflow is confirmed.
+Use **Up** or **Down** to navigate nested instance levels. **Exit All** closes every open level. **Cancel Instance** realizes a selected instance into ordinary objects; use Blender Undo if you need to reverse a completed edit.
 
 ## Next steps
 
-Continue to [Features](features.md) for the full tool guide, or see [Troubleshooting](troubleshooting.md) if something did not work as expected.
+See [Instancer](instancer.md) for the overview and [Features](features.md) for nested editing, unique copies, materials, masks, and baking.
