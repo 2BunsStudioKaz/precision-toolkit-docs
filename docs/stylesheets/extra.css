@@ -565,6 +565,21 @@ a:hover {
   margin-top: 0.85em;
 }
 
+.rst-content .tool-tab-carousel.can-scroll-left:not(.can-scroll-right):not(.is-expanded) .tool-subtools {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.8em);
+  mask-image: linear-gradient(90deg, transparent, #000 1.8em);
+}
+
+.rst-content .tool-tab-carousel.can-scroll-right:not(.can-scroll-left):not(.is-expanded) .tool-subtools {
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 1.8em), transparent);
+  mask-image: linear-gradient(90deg, #000 calc(100% - 1.8em), transparent);
+}
+
+.rst-content .tool-tab-carousel.can-scroll-left.can-scroll-right:not(.is-expanded) .tool-subtools {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.8em, #000 calc(100% - 1.8em), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 1.8em, #000 calc(100% - 1.8em), transparent);
+}
+
 .rst-content .tool-tab-carousel.is-expanded {
   grid-template-columns: minmax(0, 1fr);
 }
