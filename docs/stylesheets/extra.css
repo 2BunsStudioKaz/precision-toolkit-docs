@@ -306,9 +306,9 @@ a:hover {
   background: linear-gradient(
     100deg,
     transparent 0%,
-    rgba(229, 154, 112, 0.04) 22%,
-    rgba(255, 231, 214, 0.2) 50%,
-    rgba(229, 154, 112, 0.05) 78%,
+    rgba(229, 154, 112, 0.012) 22%,
+    rgba(255, 231, 214, 0.08) 50%,
+    rgba(229, 154, 112, 0.015) 78%,
     transparent 100%
   );
 }
@@ -320,7 +320,7 @@ a:hover {
 
 @keyframes studio-card-sweep {
   0% { transform: translateX(-15%) skewX(-18deg); opacity: 0; }
-  18% { opacity: 0.9; }
+  18% { opacity: 0.32; }
   100% { transform: translateX(430%) skewX(-18deg); opacity: 0; }
 }
 
