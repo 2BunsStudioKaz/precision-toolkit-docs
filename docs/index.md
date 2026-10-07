@@ -1,6 +1,11 @@
 <section class="studio-hero">
   <p class="studio-kicker">2 BUNS STUDIO · BLENDER TOOLS</p>
-  <h1>Precision Toolkit</h1>
+  <div class="studio-title-row">
+    <h1>Precision Toolkit</h1>
+    <a class="studio-blender-link" href="https://www.blender.org/" aria-label="Visit the Blender website" title="Blender">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Blender_Logo.svg" alt="Blender" loading="lazy">
+    </a>
+  </div>
   <p class="studio-lede">A growing collection of practical tools for Blender, with guides built to help you get straight to work.</p>
 </section>
 
